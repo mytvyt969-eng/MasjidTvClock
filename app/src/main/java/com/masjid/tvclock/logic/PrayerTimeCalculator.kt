@@ -1,5 +1,5 @@
 package com.masjid.tvclock.logic
-import com.batoulapps.adhan.*
+import com.batoulapps.adhan.Coordinates\nimport com.batoulapps.adhan.PrayerTimes\nimport com.batoulapps.adhan.data.DateComponents
 import com.batoulapps.adhan.data.DateComponents
 import com.masjid.tvclock.data.*
 import java.time.*
