@@ -20,7 +20,7 @@ import java.time.format.DateTimeFormatter
 private val timeFmt=DateTimeFormatter.ofPattern("h:mm a")
 
 @Composable
-fun PrayerCard(icon:@Composable()->Unit,name:String,adhan:LocalDateTime,iqamah:LocalDateTime,highlighted:Boolean,visuals:PhaseVisuals,modifier:Modifier=Modifier){
+fun PrayerCard(icon: @Composable () -> Unit,name:String,adhan:LocalDateTime,iqamah:LocalDateTime,highlighted:Boolean,visuals:PhaseVisuals,modifier:Modifier=Modifier){
     val bg by animateColorAsState(if(highlighted) visuals.accent.copy(alpha=.22f) else visuals.cardTint,tween(600),label="bg")
     val bd by animateColorAsState(if(highlighted) visuals.accent else visuals.cardBorder,tween(600),label="bd")
     Column(modifier.clip(RoundedCornerShape(18.dp)).background(bg).border(if(highlighted)2.dp else 1.dp,bd,RoundedCornerShape(18.dp)).padding(14.dp)){
